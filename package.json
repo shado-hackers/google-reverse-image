@@ -1,0 +1,31 @@
+{
+  "name": "google-reverse-image-api",
+  "version": "0.2.1",
+  "description": "A simple Express.js and Puppeteer app that includes a reverse API to search for images using Google Reverse Image Search.",
+  "keywords": [
+    "api",
+    "google",
+    "reverse",
+    "google reverse image",
+    "vercel"
+  ],
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node build/app.js",
+    "dev": "nodemon src/app.js",
+    "build": "npm run clean && tsc && npm run copy-assets",
+    "clean": "rimraf build"
+  },
+  "author": "SOME-1HING",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
